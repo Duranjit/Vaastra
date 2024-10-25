@@ -1,4 +1,6 @@
 Vaastra E-Commerce
+
+
 Welcome to Vaastra - An e-commerce platform dedicated to delivering a seamless online shopping experience. Vaastra offers a wide range of quality products, catering to the diverse needs of customers while ensuring a user-friendly, reliable, and secure online store.
 
 Table of Contents
