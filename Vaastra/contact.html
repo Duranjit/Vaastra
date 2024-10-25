@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vaastra | E-Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/logo.png" width="125px" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Product-details.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="Cart.html">
+            <img src="images/cart.png" width="30px" height="30px" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact">
+      <div class="contact-form">
+        <h1>Contact <span>Us</span></h1>
+        <p>Contact us via the contact form below....</p>
+        <form action="">
+          <input type="" placeholder="Your Name" id="uname" required />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+          <input type="" placeholder="Write a Subject" id="subject" required />
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </form>
+
+        <input type="submit" name="" value="Submit" class="btn" />
+      </div>
+
+      <div class="contact-img">
+        <img src="images/main.jpeg" />
+      </div>
+    </section>
+
+    <div class="contact-info">
+      <div class="card">
+        <i class="card-icon far fa-envelope"></i>
+        <p>duranjitbharadwaj@gmail.com</p>
+      </div>
+
+      <div class="card">
+        <i class="card-icon fas fa-phone"></i>
+        <p>+94 790 331 2107</p>
+      </div>
+
+      <div class="card">
+        <i class="card-icon fas fa-map-marker-alt"></i>
+        <p>Bangalore, India</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and iOS mobile phones.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo.png" width="125px" />
+            <p>
+              Experience online shopping in Global with Vaastra.com by verified
+              sellers across the country that will ensure safe and swift
+              deliveries of your orders.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="Copyright">Vaastra</p>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script>
+      if (annyang) {
+        var commands = {
+          "write name *tag": function (variable) {
+            document.getElementById("uname").value = variable; // Set value to 'Your Name' input field
+          },
+          "write email *tag": function (variable) {
+            document.getElementById("email").value = variable; // Set value to 'E-mail' input field
+          },
+          "write subject *tag": function (variable) {
+            document.getElementById("subject").value = variable; // Set value to 'Subject' input field
+          },
+          "write message *tag": function (variable) {
+            document.getElementById("message").value = variable; // Set value to 'Your Message' textarea
+          },
+          "submit form": function () {
+            document.querySelector(".btn").click();
+            alert("Form submitted!"); // Click the submit button
+          },
+          "open products": function () {
+            window.location.href = "Product-details.html"; // Redirect to the products page
+          },
+          "open account": function () {
+            window.location.href = "account.html"; // Redirect to the account page
+          },
+          "open cart": function () {
+            window.location.href = "Cart.html"; // Redirect to the cart page
+          },
+          "open Home": function () {
+            window.location.href = "index.html";
+          },
+
+          // Add more voice commands as needed
+        };
+
+        annyang.addCommands(commands);
+        annyang.start();
+      }
+    </script>
+  </body>
+</html>
